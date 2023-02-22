@@ -1,0 +1,96 @@
+* {
+  margin: 0%;
+  padding: 0px;
+}
+
+body {
+  height: 97vh;
+  background-image: url(imagens/tipos-de-esporte-og.jpg);
+  background-repeat: no-repeat; /*faz com que a imagem não se repita*/
+  background-position: center center; /*alinha a imagem*/
+  background-size: cover; /*faz com que a imagem ocupe todo o espalo*/
+  background-attachment: fixed; /*fixa a imagem para não ter rolagem*/
+}
+
+header {
+  padding-top: 40px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font: normal 20px arial;
+}
+
+.titulo {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes titulo {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+section {
+  font-size: large;
+  text-decoration: solid;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #58de4ec4;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  border-radius: 2%;
+  width: 500px;
+  height: 400px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.477);
+}
+
+#opcao {
+  text-align: center;
+}
+
+p {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#caixaTexto {
+  text-align: center;
+}
+
+#botao {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#res {
+  padding-left: 5px;
+}
+
+footer {
+  text-align: center;
+}

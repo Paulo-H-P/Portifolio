@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo De Metábolismo Basal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header><h1 class="titulo">Cálculo De Metabolismo Basal</h1></header>
+    <section>
+      <div id="caixaTexto">
+        <h3>Preencha os dados para ver o Resultado</h3>
+        <p id="opcao">
+          Género:
+          <input type="radio" name="checkSex" id="masc" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" name="checkSex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          Peso:
+          <input type="number" name="peso" id="peso" />
+        </p>
+        <p>
+          Altura em (cm):
+          <input type="number" name="altura" id="altura" />
+        </p>
+        <p>
+          Idade:
+          <input type="number" name="idade" id="idade" />
+        </p>
+
+        <p>
+          <input
+            type="button"
+            value="Calcular"
+            id="botao"
+            onclick="calcMeta()"
+          />
+        </p>
+      </div>
+      <div id="res"></div>
+    </section>
+    <footer>
+      <p>&copy;Feito por Fred</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
